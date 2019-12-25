@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SettingsActivity" >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/default_dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/profile_picture" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:id="@+id/txtUserName"
+        android:textColor="#ffffff"
+        android:layout_below="@id/profile_picture"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey there... I'm using Chatting App"
+        android:textSize="18sp"
+        android:id="@+id/txtUserStatus"
+        android:textColor="#ffffff"
+        android:layout_below="@id/txtUserName"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Change Profile Picture"
+        android:id="@+id/btnChangeDP"
+        android:background="#ffffff"
+        android:textColor="#9b1200"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_above="@+id/btnChangeStatus"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Change Profile Status"
+        android:id="@+id/btnChangeStatus"
+        android:background="#199404"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+</RelativeLayout>

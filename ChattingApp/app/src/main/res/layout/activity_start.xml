@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartActivity" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView_playing_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4bdd2c00"/>
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/chatting_app_logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_border_btn"
+        android:text="Create Account"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:id="@+id/btnReg"
+        android:layout_above="@+id/btnLoginStartActivity"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_border_btn"
+        android:text="Already Have an Account ?"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:id="@+id/btnLoginStartActivity" />
+
+</RelativeLayout>

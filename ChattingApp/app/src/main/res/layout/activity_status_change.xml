@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusChangeActivity" >
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/status_page_toolbar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/statusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textColorHint="@color/colorPink"
+        android:theme="@style/ForBlackTextColorOnWhiteBackgrgoundTheme">
+
+        <EditText
+            android:id="@+id/txtStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Status"
+            android:textColor="#000000"
+            android:layout_margin="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDone"
+        android:text="Done"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

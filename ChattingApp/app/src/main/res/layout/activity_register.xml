@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/bg_chattingapp" >
+
+    <ImageView
+        android:id="@+id/ImgV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:padding="15dp"
+        android:background="#a5000000"
+        android:visibility="gone" />
+
+    <include layout="@layout/app_bar_layout"
+             android:id="@+id/reg_page_toolbar" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/nameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:textColorHint="@color/colorPink">
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/emailLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nameLayout"
+        android:layout_marginTop="35dp"
+        android:textColorHint="@color/colorPink">
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/passLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/emailLayout"
+        android:layout_marginTop="35dp"
+        android:textColorHint="@color/colorPink"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/txtPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:inputType="textPassword"
+            android:layout_margin="10dp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSubmit"
+        android:text="Submit"
+        android:background="@drawable/white_border_btn"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

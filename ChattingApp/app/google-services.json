@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "960778783130",
+    "firebase_url": "https://chattingapp-153da.firebaseio.com",
+    "project_id": "chattingapp-153da",
+    "storage_bucket": "chattingapp-153da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960778783130:android:9cf4ea4d809e2b30",
+        "android_client_info": {
+          "package_name": "com.example.himalayabhagwani.chattingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960778783130-vfe4k3ch3bpu8fkma8gvodl63ng6rbqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.himalayabhagwani.chattingapp",
+            "certificate_hash": "f5be799880914042b157db0702f113562571dc18"
+          }
+        },
+        {
+          "client_id": "960778783130-rrh0541avoc0ma1qv708hqp22dlq8bb6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnNg4lyjCkwhG72RzzquuA2-pFPKYhCUA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960778783130-rrh0541avoc0ma1qv708hqp22dlq8bb6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

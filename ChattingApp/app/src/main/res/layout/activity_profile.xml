@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="#000000">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:src="@drawable/default_dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentTop="true"
+            android:id="@+id/profile_ImageView"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/img_shady_black_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Display Name"
+            android:layout_below="@+id/profile_ImageView"
+            android:textColor="#ffffff"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profile_DisplayName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Status"
+            android:layout_below="@+id/profile_DisplayName"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:id="@+id/profile_Status" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="No Friends"
+            android:layout_below="@+id/profile_Status"
+            android:textColor="#ffffff"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:id="@+id/profile_Friends" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSendRequest"
+            android:text="Send Friend Request"
+            android:background="@drawable/friend_request_btn"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
